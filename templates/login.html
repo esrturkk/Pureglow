@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>Giriş Yap - Pureglow</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="{% static 'img/pureglow.png' %}">
+        <link rel="stylesheet" href="{% static 'css/login.css' %}" type="text/css">
+
+    </head>
+    <body class="content" >
+        <header>
+            <div>
+                <a href="{% url 'home' %}"><img id="logo" src="{% static 'img/pureglow.png' %}" width="100px" height="125px" title="" alt="logo"></a>
+            </div>
+        </header>
+        <article >
+            <div class="main-systems" >
+                <form name="" action="" method="">
+                    <h1>Giriş</h1>
+                    <div class="login-box">
+                        <input type="text" placeholder="Kullanıcı Adı" required>
+                        <i class='bx bxs-user-pin'></i>
+                    </div>    
+                    <div class="login-box">
+                        <input type="password" placeholder="Parola" required>
+                        <i class='bx bxs-lock-alt'></i>
+                    </div>    
+                    <div class="rememberme-forget">
+                        <label><input type="checkbox">Beni Hatırla</label>
+                        <a href="#">Parolamı Unuttum?</a>
+                    </div>   
+                    <button type="submit" class="btn">Giriş yap</button>    
+                    <div class="register-link">
+                        <p>Hesabım Yok? <a href="{% url 'signup' %}">Kaydol</a> </p>
+                    </div>
+                </form>
+            </div>
+        </article>
+        <footer align="center">
+            <div id="bottom-footer">
+                © 2024, Kocaeli Üniversitesi Yazılım Mühendisliği bölümündeki birkaç öğrenci tarafından ❤️ ile tasarlanmıştır.
+            </div>
+        </footer>
+    </body>
+</html>

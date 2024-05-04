@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Oopss... - Pureglow</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="{% static 'img/pureglow.png' %}">
+        <link rel="stylesheet" href="{% static 'css/homeng.css' %}" type="text/css">
+
+    </head>
+    <body class="content">
+        <header align="center">
+            <a href="{% url 'home' %}"><img id="logo" src="{% static 'img/pureglow.png' %}" width="100px" height="125px" title="" alt="logo"></a>
+        </header>
+        <article align="center">
+            <div class="maintenance">
+                <h1>MAINTENANCE</h1>
+                <p>NOT READY, WE ARE COMING SOON!</p>
+                <a id="return-home" href="{% url 'home' %}"><span>Return to home page(TR)</span></a>
+            </div>
+        </article>
+    </body>

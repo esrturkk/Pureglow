@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>Kayıt Ol - Pureglow</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="{% static 'img/pureglow.png' %}">
+        <link rel="stylesheet" href="{% static 'css/signup.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css">
+
+    </head>
+    <body class="content">
+        <header>
+            <div>
+                <a href="{% url 'home' %}"><img id="logo" src="{% static 'img/pureglow.png' %}" width="100px" height="125px" title="" alt="logo"></a>
+            </div>
+        </header>
+        <article>
+            <div class="main-systems container">
+                <form name="" action="" method="">
+                    <div class="row">
+                        <div class="col-sm pt-3">
+                            <h1 class="text-center font-weight-bold text-monospace">Kayıt Ol</h1>
+                        </div>
+                    </div>                    
+                    <div class="row">    
+                        <div class="col-sm">
+                            <div class="signup-box form-group mt-2">
+                                <label for="nameinput">Ad Soyad:</label>
+                                <input type="text" id="nameinput" aria-describedby="nameHelp">
+                            </div>
+                        </div>    
+                        <div class="col-sm">
+                            <div class="signup-box form-group">
+                                <label for="email">E-posta Adresiniz:</label>
+                                <input type="email" id="email" placeholder="...@gmail.com">
+                            </div>
+                        </div>   
+                    </div>    
+                    <div class="row">    
+                        <div class="col-sm">
+                            <div class="signup-box form-group">
+                                <label for="nickinput">Kullanıcı Adınız:</label>
+                                <input type="text" id="nickinput" aria-describedby="nickHelp">
+                                <small id="nickHelp" class="form-text text-muted">*En az 1 rakam içermelidir.</small>
+                            </div>
+                        </div>    
+                        <div class="col-sm">
+                            <div class="signup-box form-group">
+                                <label for="exampleInputPassword1" class="form-label">Şifreniz:</label>
+                                <input type="password" id="exampleInputPassword1">
+                                <small id="nameHelp" class="form-text text-muted">*Harf,sayı ve özel karakterlerden oluşmalı.</small>
+                            </div>
+                        </div>    
+                    </div>    
+                    <div class="row">    
+                        <div class="col-sm pl-4">                        
+                                <div class="signup-box form-group px-5 py-4">
+                                    <label for="start">Doğum Tarihiniz:</label>
+                                    <input type="date" id="start" name="trip-start" value="2004-01-27" min="1940-01-01" max="2015-12-31" />
+                                </div>                        
+                        </div> 
+                    </div>    
+                    <div class="buttons mx-1">
+                        <div class="row mb-2">
+                            <button class="btn btn-block mt-3" type="submit">Kayıt Ol</button>
+                        </div>
+                        <div class="row">
+                            <button class="btn btn-block" type="reset">Sıfırla</button>
+                        </div>
+                    </div>    
+                </form>
+            </div>
+    </article>
+    <footer align="center">
+        <div id="bottom-footer">
+            © 2024, Kocaeli Üniversitesi Yazılım Mühendisliği bölümündeki birkaç öğrenci tarafından ❤️ ile tasarlanmıştır.
+        </div>
+    </footer>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>

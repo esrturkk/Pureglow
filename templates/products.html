@@ -1,0 +1,211 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>Ürünler - Pureglow</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="{% static 'img/pureglow.png' %}">
+        <link rel="stylesheet" href="{% static 'css/products.css' %}" type="text/css">
+
+    </head>
+    <body >
+        <header>
+            <div id="left-header">
+                <a href="{% url 'home' %}"><img id="logo" src="{% static 'img/pureglow.png' %}" width="60px" height="85px" title="" alt="logo"></a>
+                <span id="title"><h3>pureglow</h3></span>
+            </div>
+            <div id="right-header">
+                <div id="login-signup" class="dropdown">
+                    <button class="dropbutton"><img src="{% static 'img/login-signup.png' %}" width="30px"><span class="button-text">Giriş/Kayıt</span></button>
+                    <div class="dropdown-content">
+                    <a href="{% url 'login' %}">Giriş Yap</a>
+                    <a href="{% url 'signup' %}">Kayıt Ol</a>
+                    </div>
+                </div>
+                <div id="bask-lang">
+                    <ul type="none">
+                        <li><a href="#"><img src="{% static 'img/shopping-basket.png' %}" width="40px" title="" alt=""></a></li>
+                        <li><a href="{% url 'homeng' %}"><img src="{% static 'img/eng.png' %}" width="40px" title="" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <nav align="center">
+            <div class="menu">
+                <ul type="none">
+                    <li><a href="{% url 'home' %}">Ana Sayfa</a></li>
+                    <li><a href="{% url 'test' %}">Vücut Testi</a></li>
+                    <li><a href="{% url 'products' %}">Ürünler</a></li>
+                    <li><a href="{% url 'tips' %}">Hap Bilgiler</a></li>
+                </ul>                
+            </div>
+        </nav>
+        <article class="content" >
+            <section id="section-1">
+                <div class="card">
+                    <img src="{% static 'img/skin-cleaner.jpeg' %}">
+                    <div class="container">
+                        <h2>Cilt Temizleyici Jeli </h2>
+                        <p>Gündüz ve gece kullanımı için cildi nazikçe temizler, yağ ve kiri arındırır.</p>
+                        <a href=""><button class="btn" >Sepete Ekle</button></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'img/micellar-water.jpeg' %}">
+                    <div class="container">
+                        <h2>Micellar Su </h2>
+                        <p>Hassas ciltler için makyajı ve kirleri nazikçe temizler, cildi ferahlatır ve nemlendirir.</p>
+                        <a href=""><button class="btn" >Sepete Ekle</button></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'img/bubble-cleaner.jpeg' %}">
+                    <div class="container">
+                        <h2>Köpük Temizleyici </h2>
+                        <p>Cildi derinlemesine temizlerken nemini korur, pürüzsüz ve canlı bir cilt görünümü sağlar.</p>
+                        <a href=""><button class="btn" >Sepete Ekle</button></a>
+                    </div>
+                </div>
+            </section>
+            <section id="section-2">
+                <div class="card">
+                    <img src="{% static 'img/face-tonic.jpeg' %}">
+                    <div class="container">
+                        <h2>Yüz Tonik Spreyi</h2>
+                        <p>Cildi dengelemek ve tazelemek için hafif ve hızlı bir şekilde uygulanan bir tonik. </p>
+                        <a href=""><button class="btn" >Sepete Ekle</button></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'img/rose-water.jpeg' %}">
+                    <div class="container">
+                        <h2>Gül Suyu Tonik</h2>
+                        <p>Cildi sakinleştirir, nemlendirir ve gözenekleri sıkılaştırır.</p>
+                        <a href=""><button class="btn" >Sepete Ekle</button></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'img/natural-light.jpeg' %}">
+                    <div class="container">
+                        <h2>Doğal Işıltı</h2>
+                        <p>Cildi aydınlatan ve nemlendiren doğal içerikli bir nemlendirici.</p>
+                        <a href=""><button class="btn" >Sepete Ekle</button></a>
+                    </div>
+                </div>
+            </section>
+            <section id="section-3">
+                <div class="card">
+                    <img src="{% static 'img/refreshing-mask.jpeg' %}">
+                    <div class="container">
+                        <h2>Canlandırıcı Maske</h2>
+                        <p>Cildi canlandıran ve parlaklık kazandıran bir yüz maskesi.</p>
+                        <a href=""><button class="btn" >Sepete Ekle</button></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'img/intensive-repair.jpeg' %}">
+                    <div class="container">
+                        <h2>Yoğun Onarım</h2>
+                        <p> Derinlemesine nemlendirme ve yenileyici etki sunan bir gece maskesi.</p>
+                        <a href=""><button class="btn" >Sepete Ekle</button></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'img/skin-detox.jpeg' %}">
+                    <div class="container">
+                        <h2>Cilt Detoksu</h2>
+                        <p>Cildi arındıran ve gözenekleri temizleyen bir kil maskesi.</p>
+                        <a href=""><button class="btn">Sepete Ekle</button></a>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <footer>
+            <div id="top-footer">
+                <div id="top-left-footer">
+                    <table width="100%">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Pureglow
+                                </th>
+                                <th>
+                                    İçerikler
+                                </th>
+                                <th>
+                                    Sosyal Medya
+                                </th>
+                                <th>
+                                    Mobil Uygulama
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ul id="footer-links-1" type="none">
+                                        <li><a href="{% url 'home' %}">Ana Sayfa</a></li>
+                                        <li><a href="{% url 'aboutus' %}">Hakkımızda</a></li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul id="footer-links-2" type="none">
+                                        <li><a href="{% url 'test' %}">Vücut Testi</a></li>
+                                        <li><a href="{% url 'products' %}">Ürünler</a></li>
+                                        <li><a href="{% url 'tips' %}">Hap Bilgiler</a></li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul id="footer-links-3" type="none">
+                                        <li><a href="https://www.facebook.com/pureglow"><img src="{% static 'img/facebook.png' %}" width="35px" title="" alt="facebook"><span class="link-text">Facebook</span></a></li>
+                                        <li><a href="https://www.instagram.com/pureglow"><img src="{% static 'img/instagram.png' %}" width="35px" title="" alt="instagram"><span class="link-text">Instagram</span></a></li>
+                                        <li><a href="https://www.x.com/pureglow"><img src="{% static 'img/twitter.png' %}" width="35px" title="" alt="x"><span class="link-text">X</span></a></li>
+                                        <li><a href="https://www.youtube.com/pureglow"><img src="{% static 'img/youtube.png' %}" width="35px" title="" alt="youtube"><span class="link-text">Youtube</span></a></li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul id="footer-links-4" type="none">
+                                        <li><a href="https://itunes.apple.com/app/pureglow"><img src="{% static 'img/app-store.png' %}" width="30px" title="" alt="app-store"><span class="link-text">App Store</span></a></li>
+                                        <li><a href="https://play.google.com/store/apps/pureglow"><img src="{% static 'img/google-play.png' %}" width="30px" title="google-play" alt=""><span class="link-text">Google Play</span></a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                        </tfoot>
+                    </table>
+                </div>
+                <div id="top-right-footer">
+                    <div id="logo">
+                        <img id="logo" src="{% static 'img/pureglow.png' %}" title="" alt="logo" width="100px" height="125px">
+                    </div>
+                    <div class="dropdown">
+                        <button id="comm-email" class="dropbutton"><img src="{% static 'img/email.png' %}" title="" alt="email" width="30px"><span class="button-text">pureglow@mail.com</span></button>
+                        <div class="dropdown-content">
+                            <span>pureglow@mail.com</span>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button id="comm-tel" class="dropbutton"><img src="{% static 'img/tel.png' %}" title="" alt="tel" width="30px"><span class="button-text">0212 000 1905</span></button>
+                        <div class="dropdown-content">
+                            <span>0212 000 1905</span>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button id="comm-address" class="dropbutton"><img src="{% static 'img/address.png' %}" title="" alt="address" width="30px"><span class="button-text">Seyrantepe Mah., Metin Oktay Cad., Aslantepe, Sarıyer/İstanbul</span></button>
+                        <div class="dropdown-content">
+                            <span>Seyrantepe Mah., Metin Oktay Cad., Aslantepe, Sarıyer/İstanbul</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bottom-footer">
+                © 2024, Kocaeli Üniversitesi Yazılım Mühendisliği bölümündeki birkaç öğrenci tarafından ❤️ ile tasarlanmıştır.
+            </div>
+        </footer>
+    </body>
+</html>
+    </body>
