@@ -34,6 +34,6 @@ def karma(request):
 def kuru(request):
     return render(request, 'kuru.html')
 
-def hassas(request):
-    return render(request, 'hassas.html')
+def normal(request):
+    return render(request, 'normal.html')
 

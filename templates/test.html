@@ -12,11 +12,11 @@
     <link rel="shortcut icon" type="image/png" href="{% static 'img/pureglow.png' %}">
     <link rel="stylesheet" href="{% static 'css/home.css' %}" type="text/css">
 </head>
-<body>
+<body class="test-body">
     
     <section>
-        <h1>Cilt Tipi Testi</h1>
-        <p>YEYOOOO</p>
+        <h1>Cilt Tipi Analizi</h1>
+        <p>&#x1F4AB; Haydi Cilt Tipinizi Öğrenelimmmm  &#x1F4AB;</p>
         <div id="questions"></div>
         <div id="answer"></div>
     </section>
@@ -25,8 +25,7 @@
 
 
 
-
-    <div id="yagli" style="display: none;">
+    <div id="yagli" style="display: none; ">
         <li><a href="{% url 'yagli' %}">Yağlı Cilt Tipi Ürünleri</a></li>
     </div>
 
@@ -38,9 +37,11 @@
         <li><a href="{% url 'kuru' %}">Kuru Cilt Tipi Ürünleri</a></li>
     </div>
 
-    <div id="hassas" style="display: none;">
-        <li><a href="{% url 'hassas' %}">Normal Cilt Tipi Ürünleri</a></li>
+    <div id="normal" style="display: none;">
+        <li><a href="{% url 'normal' %}">Normal Cilt Tipi Ürünleri</a></li>
     </div>
+    
+    
 
 
 </body>

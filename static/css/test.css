@@ -10,6 +10,10 @@ body {
     align-items: center;
     width: 100vw;
     overflow-x: hidden;
+    background-image: url('https://media.istockphoto.com/id/1479457554/tr/vekt%C3%B6r/fhd.jpg?s=612x612&w=0&k=20&c=uQxxBUmvz_b8YVYFFoHm5cyLgnhw-DCkZy4jRrb7_O4=');
+    background-size: 1000px auto; 
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 section {
@@ -17,9 +21,12 @@ section {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     line-height: 1.05;
-    text-align: left;
+    text-align: center;
+    font-style:italic ;
+    color: rgb(134, 27, 81); /* Koyu pembe rengi */
+    font-weight: bold; /* Kalın yazı tipi */
 }
 
 h2 {
@@ -31,12 +38,14 @@ h2 {
 p {
     font-size: 1.125rem;
     line-height: 1.2;
+    text-align: center;
+    color: rgb(134, 27, 81); /* Koyu pembe rengi */
 }
 
 .title-block {
     width: 600px;
     height: 210px;
-    background-color: rgb(102, 96, 221);
+    background-color: rgb(207, 77, 142);
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -49,6 +58,10 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 16px 0 23px 0;
+    font-style:italic ;
+    font-weight: bold; /* Kalın yazı tipi */
+    color: rgb(134, 27, 81);
+
 }
 
 .answer-block {
@@ -82,7 +95,9 @@ p {
 .result-block {
     width: 600px;
     height: 300px;
-    background-color: rgb(255, 61, 158);
+    background-color: rgb(134, 27, 81);
+    color: #fff;
+    font-weight: bold;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -96,6 +111,37 @@ p {
     height: 60%;
     border-radius: 7px;
 }
+
+#yagli li,
+#karma li,
+#kuru li,
+#normal li {
+    list-style-type: none; /* Linklerin başındaki nokta kalksın */
+    text-decoration: none; /* Linklerin altındaki çizgi kalksın */
+    padding: 5px; /* Linkler arasında boşluk bırak */
+    border: 1px solid #4e043c; /* Linklere çerçeve ekle */
+    background-color: #9a1ead; /* Arka plan rengini ayarla */
+    display: inline-block; /* Linkleri yatay hizala */
+    margin: 5px; /* Linklerin etrafında boşluk bırak */
+}
+
+#yagli li a,
+#karma li a,
+#kuru li a,
+#normal li a {
+    color: #fff; /* Linklerin metin rengini ayarla */
+    text-decoration: none; /* Linklerin altındaki çizgi kalksın */
+    display: block; /* Linkleri blok element yap */
+    padding: 10px; /* Link içinde içeriği merkezle */
+}
+
+#yagli li:hover,
+#karma li:hover,
+#kuru li:hover,
+#normal li:hover {
+    background-color: #e90bae; /* Link üzerine gelindiğinde arka plan rengini değiştir */
+}
+
 
 
 
