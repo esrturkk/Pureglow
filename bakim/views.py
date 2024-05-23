@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render 
+
 
 def aboutus(request):
     return render(request, 'aboutus.html')
@@ -23,4 +24,16 @@ def test(request):
 
 def tips(request):
     return render(request, 'tips.html')
+
+def yagli(request):
+    return render(request, 'yagli.html')
+
+def karma(request):
+    return render(request, 'karma.html')
+
+def kuru(request):
+    return render(request, 'kuru.html')
+
+def normal(request):
+    return render(request, 'normal.html')
 
