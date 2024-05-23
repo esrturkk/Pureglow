@@ -1,25 +1,47 @@
+
 {% load static %}
 <!DOCTYPE html>
-<html lang="tr">
-    <head>
-        <title>Oopss... - Pureglow</title>
-        <meta charset="UTF-8">
-        <meta name="keywords" content="">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" type="image/png" href="{% static 'img/pureglow.png' %}">
-        <link rel="stylesheet" href="{% static 'css/test.css' %}" type="text/css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/pureglow.png' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/test.css' %}" type="text/css">
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/pureglow.png' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" type="text/css">
+</head>
+<body>
+    
+    <section>
+        <h1>Cilt Tipi Testi</h1>
+        <p>YEYOOOO</p>
+        <div id="questions"></div>
+        <div id="answer"></div>
+    </section>
 
-    </head>
-    <body class="content">
-        <header align="center">
-            <a href="{% url 'home' %}"><img id="logo" src="{% static 'img/pureglow.png' %}" width="100px" height="125px" title="" alt="logo"></a>
-        </header>
-        <article align="center">
-            <div class="maintenance">
-                <h1>BAKIM</h1>
-                <p>HAZIR DEĞİL, ÇOK YAKINDA SİZLERLE!</p>
-                <a id="return-home" href="{% url 'home' %}"><span>Ana sayfaya dön</span></a>
-            </div>
-        </article>
-    </body>
+    <script src="{% static 'js/test.js' %}"></script>
+
+
+
+
+    <div id="yagli" style="display: none;">
+        <li><a href="{% url 'yagli' %}">Yağlı Cilt Tipi Ürünleri</a></li>
+    </div>
+
+    <div id="karma" style="display: none;">
+        <li><a href="{% url 'karma' %}">Karma Cilt Tipi Ürünleri</a></li>
+    </div>
+
+    <div id="kuru" style="display: none;">
+        <li><a href="{% url 'kuru' %}">Kuru Cilt Tipi Ürünleri</a></li>
+    </div>
+
+    <div id="hassas" style="display: none;">
+        <li><a href="{% url 'hassas' %}">Normal Cilt Tipi Ürünleri</a></li>
+    </div>
+
+
+</body>
+</html>
