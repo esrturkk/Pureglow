@@ -10,10 +10,12 @@ body {
     align-items: center;
     width: 100vw;
     overflow-x: hidden;
-    background-image: url('https://media.istockphoto.com/id/1479457554/tr/vekt%C3%B6r/fhd.jpg?s=612x612&w=0&k=20&c=uQxxBUmvz_b8YVYFFoHm5cyLgnhw-DCkZy4jRrb7_O4=');
-    background-size: 1000px auto; 
+    background: url(../img/testarka3.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
+
 }
 
 section {
@@ -25,7 +27,7 @@ h1 {
     line-height: 1.05;
     text-align: center;
     font-style:italic ;
-    color: rgb(134, 27, 81); /* Koyu pembe rengi */
+    color: rgb(45, 104, 57); /* Koyu pembe rengi */
     font-weight: bold; /* Kalın yazı tipi */
 }
 
@@ -39,13 +41,13 @@ p {
     font-size: 1.125rem;
     line-height: 1.2;
     text-align: center;
-    color: rgb(134, 27, 81); /* Koyu pembe rengi */
+    color: rgb(45, 104, 57); /* Koyu pembe rengi */
 }
 
 .title-block {
     width: 600px;
     height: 210px;
-    background-color: rgb(207, 77, 142);
+    background-color: rgb(159, 193, 163);
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -60,7 +62,7 @@ p {
     margin: 16px 0 23px 0;
     font-style:italic ;
     font-weight: bold; /* Kalın yazı tipi */
-    color: rgb(134, 27, 81);
+    color: rgb(45, 104, 57);
 
 }
 
@@ -95,7 +97,7 @@ p {
 .result-block {
     width: 600px;
     height: 300px;
-    background-color: rgb(134, 27, 81);
+    background-color: rgb(219, 141, 180);
     color: #fff;
     font-weight: bold;
     border-radius: 5px;
@@ -119,8 +121,8 @@ p {
     list-style-type: none; /* Linklerin başındaki nokta kalksın */
     text-decoration: none; /* Linklerin altındaki çizgi kalksın */
     padding: 5px; /* Linkler arasında boşluk bırak */
-    border: 1px solid #4e043c; /* Linklere çerçeve ekle */
-    background-color: #9a1ead; /* Arka plan rengini ayarla */
+    border: 1px solid #215128; /* Linklere çerçeve ekle */
+    background-color: #4e9c59; /* Arka plan rengini ayarla */
     display: inline-block; /* Linkleri yatay hizala */
     margin: 5px; /* Linklerin etrafında boşluk bırak */
 }
@@ -139,7 +141,7 @@ p {
 #karma li:hover,
 #kuru li:hover,
 #normal li:hover {
-    background-color: #e90bae; /* Link üzerine gelindiğinde arka plan rengini değiştir */
+    background-color: #2c6c34; /* Link üzerine gelindiğinde arka plan rengini değiştir */
 }
 
 
