@@ -1,6 +1,11 @@
+
+//HTML dokümanındaki bir elementin id özniteliği "questions" olan elementin referansını alır,soru ve cevap seçenekleri görüntülenir
 const questionDisplay = document.getElementById('questions')
+//HTML dokümanındaki bir elementin id özniteliği "answer" olan elementin referansını alır,testin sonucunun görüntülendiği ve kullanıcıya bir sonraki adıma geçmesi için yönlendirme yapılan bölümdür.
 const answerDisplay = document.getElementById('answer')
 
+
+// soruları ve cevapları içeren dizi
 const questions = [
     {
         id: 0,
@@ -188,6 +193,8 @@ const questions = [
     
 ]
 
+
+// farklı cilt tiplerine ilişkin sonuç verilerini içeren dizi
 const result = [
     {
         text: "Yağlı Cilt",
@@ -266,6 +273,7 @@ const populateQuestions = () => {
 
 populateQuestions()
 
+//Bu fonksiyonun amaçları; kullanıcının bir soruya cevap vermesi durumunda, bu cevabın işlenmesi, ilgili sorunun unansweredQuestions dizisinden   kaldırılması, kaydırma işleminin gerçekleştirilmesi ve ilgili soru bloğunun devre dışı bırakılması
 const handleClick = (questionId, chosenAnswer) => {
     if (unansweredQuestions.includes(questionId)){
         chosenAnswers.push(chosenAnswer)
@@ -284,17 +292,17 @@ const handleClick = (questionId, chosenAnswer) => {
 
     disableQuestionBlock(questionId, chosenAnswer)
 
+    //cevapsız soru olup olmadığını kontrol eder
     if(!unansweredQuestions.length) {
-        // scroll to answer div
         location.href = '#answer'
         showAnswer()
     }
 }
 
 const showAnswer = () => {
-    const counts = [0, 0, 0, 0]; // Yağlı, Karma, Kuru, Normal cilt cevaplarının sayısını saklayacak dizi
+    const counts = [0, 0, 0, 0]; // Yağlı, Karma, Kuru, Normal cilt cevaplarının sayısını saklayan dizi
 
-    // Her soru için en çok seçilen cevabın sayısını sayalım
+    // her soru için en çok seçilen cevabın sayısı sayılır
     questions.forEach(question => {
         question.answers.forEach((answer, index) => {
             const count = chosenAnswers.filter(chosen => chosen === answer.text).length;
@@ -305,7 +313,7 @@ const showAnswer = () => {
     let maxIndex = 0;
     let maxCount = counts[0];
 
-    // En çok seçilen cevabın indeksini ve sayısını bulalım
+    // en çok seçilen cevabın indeksini ve sayısını bulma
     counts.forEach((count, index) => {
         if (count >= maxCount) {
             maxCount = count;
@@ -356,13 +364,13 @@ const showAnswer = () => {
 
 const showLink = (mostSelectedAnswer) => {
      
-    // Öncelikle tüm divleri gizleyin
+    // tüm divler gixlenir
     document.getElementById('yagli').style.display = 'none';
     document.getElementById('karma').style.display = 'none';
     document.getElementById('kuru').style.display = 'none';
     document.getElementById('normal').style.display = 'none';
 
-     // Test sonucuna göre ilgili div'i gösterin
+     // test sonucuna göre ilgili div gösterilir
      if (mostSelectedAnswer === 'Yağlı Cilt') {
          document.getElementById('yagli').style.display = 'block';
      } else if (mostSelectedAnswer === 'Karma Cilt') {
@@ -376,7 +384,7 @@ const showLink = (mostSelectedAnswer) => {
 
 
 
-
+//chosenAnswer parametresi olarak belirtilen yanıt dışındaki tüm seçenekler %50 opaklıkla görsel olarak devre dışı.
 const disableQuestionBlock = (questionId, chosenAnswer) => {
     const currentQuestionBlock = document.getElementById(questionId + "-questions")
 
